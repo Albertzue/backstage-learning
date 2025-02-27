@@ -55,7 +55,7 @@ spec:
     picture: https://example.com/groups/bu-infrastructure.jpeg
   parent: ops
   children: [backstage, other]
-  members: [default/albert, jane]
+  members: [albert, jane]
 
 ---
 
