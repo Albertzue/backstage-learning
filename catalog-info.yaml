@@ -4,6 +4,6 @@ metadata:
   name: terroir-tracking-web
   description: Find where your juice comes from
 spec:
-  type: test
+  type: service
   lifecycle: production
   owner: tracking-team
