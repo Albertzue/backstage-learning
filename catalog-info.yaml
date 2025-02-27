@@ -55,4 +55,17 @@ spec:
     picture: https://example.com/groups/bu-infrastructure.jpeg
   parent: ops
   children: [backstage, other]
-  members: [jdoe]
+  members: [default/albert, jane]
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: albert
+spec:
+  profile:
+    displayName: Albert Zhu
+    email: yunjie.zhu@carrier.com
+    picture: https://example.com/staff/jenny-with-party-hat.jpeg
+  memberOf: [Infrastructure]
