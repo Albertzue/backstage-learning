@@ -34,7 +34,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: team-a
+  owner: infrastructure
   system: artist-engagement-portal
   dependsOn: ['resource:artists-db']
   apiConsumedBy: ['component:www-artist']
@@ -45,12 +45,14 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: team-a
-  description: this is team-a
+  name: infrastructure
+  description: The infra business unit
 spec:
-  type: team
+  type: business-unit
   profile:
     displayName: Infrastructure
-    email: team-a@carrier.com
+    email: infrastructure@example.com
     picture: https://example.com/groups/bu-infrastructure.jpeg
-  members: [albert]
+  parent: ops
+  children: [backstage, other]
+  members: [jdoe]
