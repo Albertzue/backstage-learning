@@ -38,3 +38,19 @@ spec:
   system: artist-engagement-portal
   dependsOn: ['resource:artists-db']
   apiConsumedBy: ['component:www-artist']
+
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-a
+  description: this is team-a
+spec:
+  type: team
+  profile:
+    displayName: Infrastructure
+    email: team-a@carrier.com
+    picture: https://example.com/groups/bu-infrastructure.jpeg
+  members: [albert]
