@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: terroir-tracking-web
+  name: terroir-tracking-web2
   description: Find where your juice comes from
 spec:
   type: service
